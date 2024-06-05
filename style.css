@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  /* TYPOGRAPHY */
+  --FF-type: "Poppins", sans-serif;
+
+  --FW-light:200;
+  --FW-normal:400;
+  --FW-bold:600;
+
+  --FS-light:0.9275rem;  
+  --FS-normal:1.25rem;
+  --FS-bold:1.625rem;
+
+  /* COLORS */
+  --Primary-Red: hsl(0, 78%, 62%);
+  --Primary-Cyan: hsl(180, 62%, 55%);
+  --Primary-Orange: hsl(34, 97%, 64%);
+  --Primary-Blue: hsl(212, 86%, 64%);
+
+  --Neutral-veryDarkBlue: hsl(234, 12%, 34%);
+  --Neutral-grayishBlue: hsl(229, 6%, 66%);
+  --Neutral-veryLightGray: hsl(0, 0%, 98%);
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+ }
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+}
+body{
+  background-color: hsl(0, 0%, 98%);
+}
+header{
+  width: 65%;
+  margin-inline: auto;
+  margin-block: 2em;
+}
+header h1{
+  font-family: var(--FF-type);
+  font-weight: var(--FW-normal);
+  font-size: (var(--FS-bold));
+  color: var(--Neutral-veryDarkBlue);  
+  text-align: center;
+}
+header span{
+  font-weight: var(--FW-bold);
+}
+p{
+  font-weight: var(--FW-light);
+  font-size: (var(--FS-light));
+  color: var(--Neutral-grayishBlue);
+  text-align: center;
+  margin-top: 1em;
+}
+main{
+  padding: 2em;
+}
+main div{
+  width: 90%;
+  margin-inline: auto;
+  padding: 1.2em;
+  margin-bottom: 2em;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 1px 10px 10px var(--Neutral-grayishBlue);
+}
+main h2{
+  font-family: var(--FF-type);
+  font-weight: var(--FW-bold);
+  font-size: (var(--FS-bold));
+  color: var(--Neutral-veryDarkBlue);  
+  text-align: left;
+}  
+main p{
+  text-align: left;
+}
+
+.super{
+  border-top: .3em solid var(--Primary-Cyan);
+}
+.team{
+  border-top: .3em solid var(--Primary-Red);
+}
+.karma{
+  border-top: .3em solid var(--Primary-Orange);
+}
+.calc{
+  border-top: .3em solid var(--Primary-Blue);
+}
+figure{
+  margin-top: 2em;
+}
+figure img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+}
+footer{
+  margin: 2em;
+}
+@media (min-width:800px){
+    main{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    '.... two ....'
+    'one two four'
+    'one three four'
+    '.... three ....'
+    ;
+  }
+  .super{
+    grid-area: one;
+  }
+  .team{
+    grid-area:two;
+  }
+  .karma{  
+    grid-area: three;
+  }
+  .calc{
+    grid-area: four;
+  }
+}
