@@ -32,13 +32,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-
-
-### Useful resources
-
-- [Example resource 1](https://www.w3schools.com/) - This is a good refernce site.
-
-
 ## Author
 
 - Frontend Mentor [@Gideon-w](https://www.frontendmentor.io/profile/Gideon-w).
