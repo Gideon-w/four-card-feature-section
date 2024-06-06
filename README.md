@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-(./screenshot.jpg)
+![](./Screenshot%202024-06-06%20at%2019-48-15%20Frontend%20Mentor%20Four%20card%20feature%20section.png)
 
 
 ### Links
@@ -41,6 +41,6 @@ Users should be able to:
 
 ## Author
 
-- Gideon-w find me on Frontend Mentor [@Gideon-w](https://www.frontendmentor.io/profile/Gideon-w).
+- Frontend Mentor [@Gideon-w](https://www.frontendmentor.io/profile/Gideon-w).
 
 
